@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Buy Or Sale</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .between{
+            display: flex;
+            justify-content: space-around;
+        }
+        .left{
+            margin-top: 250px;
+        }
+        .leftone{
+            display: flex;
+        }
+        .leftone img{
+            margin-top: 15px;
+        }
+        .leftone h1{
+            margin-top: 20px;
+            color: white;
+            font-size: 20px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+        .lefttwo h1{
+            margin-top: 20px;
+            color: white;
+            font-size: 70px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+        .lefttwo h2{
+            margin-top: 20px;
+            color: white;
+            font-size: 25px;
+            font-family: Poppins;
+            font-weight: 300;
+        }
+        .lefttwo p{
+            margin-top: 20px;
+            color: white;
+            font-size: 25px;
+            font-family: Poppins;
+            font-weight: 300;
+        }
+        .lefttwo span {
+            margin-top: 20px;
+            color: white;
+            font-size: 25px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+        .leftthree{
+            display: flex;
+            margin-top: 30px;
+        }
+        .buttonsatu span{
+            display: flex;
+        }
+        .buttonsatu button{
+            padding-top: 17px;
+            padding-bottom: 17px;
+            padding-left: 45px;
+            padding-right: 45px;
+            background-color: white;
+            border-radius: 30px;
+        }
+        .buttonsatu button p{
+            color: black;
+            font-family: Manrope;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 27px;
+            margin-top: -21px;
+        }
+        .buttondua span{
+            display: flex;
+        }
+        .buttondua button{
+            padding-top: 17px;
+            padding-bottom: 17px;
+            padding-left: 35px;
+            padding-right: 35px;
+            background-color: #A19F9F;
+            border-radius: 30px;
+            margin-left: 20px;
+        }
+        .buttondua button p{
+            color: black;
+            font-family: Manrope;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        .right{
+            margin-top: 150px;
+        }
+        /* UnderBetween */
+        .underbetween{
+            display: flex;
+            justify-content: space-around;
+        }
+        .kiri{  
+            margin-top: 100px;
+        }
+        .kiriatas{
+            display: flex;
+        }
+        .kiriatas img{
+            
+        }
+        .garis{
+        border-left: 2px white solid;
+        height: 22px;
+        width: 0px;
+        margin-top: 2px;
+        margin-left: 15px;
+        }
+        .kiriatas h1{
+            margin-left: 10px;
+            color: white;
+            font-size: 15px;
+            font-family: Poppins;
+            font-weight: 700;
+        }
+        .kiribawah{
+            margin-top: 10px;
+            margin-left: 6px;
+        }
+        .kiribawah img{
+            margin-right: 10px;
+        }
+        .kanan{
+
+        }
+        .kanansatu{
+            display: flex;
+
+        }
+        .kanansatu h1{
+            color: white;
+            font-family: Poppins;
+            font-size: 25px;
+            margin-top: 15px;
+        }
+        .kanansatu button{
+            padding-top: 17px;
+            padding-bottom: 17px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: #FD6643;
+            border-radius: 30px;
+            margin-left: 20px;
+        }
+        .kanansatu button p{
+            color: white;
+            font-family: Manrope;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        .kanandua h1{
+            color: white;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 15px;
+            font-weight: 300;
+        }
+        .kanantiga{
+            display: flex;
+        }
+        .kanantigasatu h1{
+            color: white;
+            font-family: Poppins;
+            font-size: 35px;
+            margin-top: 15px;
+        }
+        .kanantigasatu h2{
+            color: white;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .kanantigadua h1{
+            color: white;
+            font-family: Poppins;
+            font-size: 35px;
+            margin-top: 15px;
+        }
+        .kanantigadua h2{
+            color: white;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .kanantigatiga h1{
+            color: white;
+            font-family: Poppins;
+            font-size: 35px;
+            margin-top: 15px;
+        }
+        .kanantigatiga h2{
+            color: white;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .gariss{
+            border-left: 2px white solid;
+        height: 42px;
+        width: 0px;
+        margin-top: 50px;
+        margin-left: 35px;
+        margin-right: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="between">
+        <div class="left">
+            <div class="leftone">
+                <img src="Group 693.png" alt="" width="35px" height="35x">
+                <h1>5000+ GHANAIANS HAVE BEEN USING THESE ICONS </h1>
+            </div>
+            <div class="lefttwo">
+                <h1>Buy, Sell  or  Design <br> 3D Designs</h1>
+                <h2>REALISTIC ICONS FOR YOUR DESIGNS </h2>
+                <p>Use <span>Max.</span> objects in your designs and projects + freely <br>
+                    Withdraw premium objects. <span>Starting at $3.49/m.</span></p>
+            </div>
+            <div class="leftthree">
+                <div class="buttonsatu">
+                    <button><span><img src="image.png" alt="" width="20px" height="20px"></span><p>Try For Free</p></button> 
+                </div>
+                <div class="buttondua">
+                    <button><span><img src="Cart.png" alt="" width="20px" height="20px"><p>Sell Your Design</p></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="right">
+            <img src="Objects.png" alt="">
+        </div>
+    </div>
+    <div class="underbetween">
+        <div class="kiri">
+            <div class="kiriatas">
+                <img src="shield.png" alt="" width="25px" height="25x">
+                <div class="garis"></div>
+                <h1>TRUSTED & USED BY THE BIGGEST DESIGNERS & INFLUENCERS AROUND THE WORLD</h1>
+            </div>
+            <div class="kiribawah">
+                <img src="anhar.png" alt="" width="55px" height="55x">
+                <img src="barra.png" alt="" width="55px" height="55x">
+                <img src="ben.png" alt="" width="55px" height="55x">
+                <img src="fadel.png" alt="" width="55px" height="55x">
+                <img src="faqih.png" alt="" width="55px" height="55x">
+                <img src="hisyam.png" alt="" width="55px" height="55x">
+                <img src="nijar.png" alt="" width="55px" height="55x">
+                <img src="rafi.png" alt="" width="55px" height="55x">
+            </div>
+        </div>
+        <div class="kanan">
+            <div class="kanansatu">
+                <h1>3D ICONS LIBRARY</h1>
+                <button><p>Selling</p></button>
+            </div>
+            <div class="kanandua">
+                <h1>Here you can see live stats of our sales</h1>
+            </div>
+            <div class="kanantiga">
+                <div class="kanantigasatu">
+                    <h1>C 46,8900,00</h1>
+                    <h2>01. TOTAL ICONS SALES</h2>
+                </div>
+                <div class="gariss"></div>
+                <div class="kanantigadua">
+                    <h1>C 6,7509,00</h1>
+                    <h2>02. PAID TO DESIGNERS</h2>
+                </div>
+                <div class="gariss"></div>
+                <div class="kanantigatiga">
+                    <h1>C 4,1890,00</h1>
+                    <h2>03. AVAILABLE</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
